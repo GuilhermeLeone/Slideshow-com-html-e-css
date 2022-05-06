@@ -1,0 +1,100 @@
+body{
+	margin: 0px;
+	padding: 0px;
+	width: 100vw;
+	height: 100vh;
+	background: linear-gradient(72deg, blue 1%, purple 60%);
+}
+
+.container{
+	width: 935px;
+	height: 520px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	overflow: hidden;
+	border-radius: 20px;
+}
+
+.navigation{
+	display: flex;	
+	position: absolute;
+	bottom: 20px;
+	width: 100%;
+	height: 50px;
+	justify-content: center;
+	align-items: center;
+}
+
+.bar{
+	border: solid 2px #fff;
+	margin: 6px;
+	padding: 6px;
+	border-radius: 6px;
+	width: 70px;
+	height: 14px;
+	transition-duration: .6s;
+	cursor: pointer;
+}
+
+.bar:hover{
+	background: #fff;
+}
+
+input{
+	display: none;
+}
+
+.slides{
+	display: flex;
+	width: 500%;
+	height: 100%;
+}
+
+.slide{
+	width: 20%;
+	height: 100%;
+	transition-duration: .6s;
+}
+
+.slide img{
+	width: 100%;
+	height: 100%;
+}
+
+#radio1:checked ~ .s1{
+	margin-left: 0%;
+}
+
+#radio2:checked ~ .s1{
+	margin-left: -20%;
+}
+
+#radio3:checked ~ .s1{
+	margin-left: -40%;
+}
+
+#radio4:checked ~ .s1{
+	margin-left: -60%;
+}
+
+#radio5:checked ~ .s1{
+	margin-left: -80%;
+}
+
+/*#radio6:checked ~ .s1{
+	margin-left: -100%;
+}
+
+#radio7:checked ~ .s1{
+	margin-left: -120%;
+}
+
+#radio8:checked ~ .s1{
+	margin-left: -140%;
+}
+
+#radio9:checked ~ .s1{
+	margin-left: -160%;
+}*/
